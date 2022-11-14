@@ -10,7 +10,7 @@
     <%= form.label :users_word, "type your answer here:" %>
     <%= form.text_field :users_word %>
     <%= form.submit "Submit your answer to the QUIZ MASTER! HAHAHAHA" %>
-    <%= form.hidden_field letters: @letters%>
+    <%= hidden_field_tag 'letters', @letters  %>
   <% end %>
 
 </section>
